@@ -1,0 +1,38 @@
+.slider-menu {
+  width: 100vw;
+  height: 100%;
+  padding: 16px;
+
+  background-image: url("../../../public/images/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__wrapper {
+    padding: 12px 24px;
+    width: 100%;
+    height: 100%;
+
+    background-color: #f4d2e5;
+  }
+
+  &-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+    &.open {
+      width: 100vw;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
