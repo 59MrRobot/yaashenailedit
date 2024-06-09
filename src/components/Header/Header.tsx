@@ -17,32 +17,7 @@ export const Header: React.FC = () => {
 
       <p className="header__subtitle">Elegance at Your Fingertips.</p>
 
-      {/* <div className="header__container">
-        <img
-          src={`${process.env.PUBLIC_URL}/images/header.PNG`}
-          alt="header"
-          className="header__image"
-        />
-
-        <img
-          src={`${process.env.PUBLIC_URL}/images/header1.PNG`}
-          alt="header"
-          className="header__image"
-        />
-
-        <img
-          src={`${process.env.PUBLIC_URL}/images/header2.jpg`}
-          alt="header"
-          className="header__image"
-        />
-
-        <img
-          src={`${process.env.PUBLIC_URL}/images/header3.PNG`}
-          alt="header"
-          className="header__image"
-        />
-      </div> */}
-
+      <a href="#book" className="header__button">Book Now</a>
     </div>
   )
 }

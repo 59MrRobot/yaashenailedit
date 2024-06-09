@@ -1,17 +1,14 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useState } from 'react';
 import './Form.scss';
 
 export const Form = () => {
   const [firstName, setFirstName] = useState('');
   const [surname, setSurname] = useState('');
   const [number, setNumber] = useState('+27');
-  const numberLength = useMemo(() => number.split(' ').join('').length, [number]);
 
-  useEffect(() => {
-    if (numberLength % 3 === 0){
-      setNumber(prev => `${prev} `);
-    }
-  }, [numberLength]);
+  const onSubmit = () => {
+    console.log(firstName, surname, number);
+  }
 
   return (
     <div className="form" id="book">
@@ -24,6 +21,7 @@ export const Form = () => {
           id="firstName"
           value={firstName}
           placeholder="First Name"
+          required
           className="form__input"
           onChange={(event) => setFirstName(event.target.value)}
         />
@@ -34,6 +32,7 @@ export const Form = () => {
           id="surname"
           value={surname}
           placeholder="Surname"
+          required
           className="form__input"
           onChange={(event) => setSurname(event.target.value)}
         />
@@ -43,18 +42,15 @@ export const Form = () => {
           name="cell"
           id="cell"
           value={number}
-          // pattern={/^\(\d{3}\)-\d{3}-\d{4}$/}
+          required
           maxLength={15}
           className="form__input"
           onChange={(event) => setNumber(event.target.value)}
         />
 
-        <input
-          type="submit"
-          name="submit"
-          id="submit"
-          className="form__button"
-        />
+        <input type="datetime-local" name="datetime" id="datetime" />
+
+        <button className="form__button" onClick={() => onSubmit()}>Submit</button>
       </form>
     </div>
   )

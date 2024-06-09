@@ -1,12 +1,13 @@
+@import '../../styles/mixins';
+@import '../../styles/vars';
+
 .form {
-  margin-top: 16px;
-  padding: 12px 24px;
+  @include layout;
   width: 100%;
 
-  text-align: center;
-
   &__container {
-    margin-top: 16px;
+    @include container;
+
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -14,7 +15,6 @@
     gap: 8px;
     width: 100%;
 
-    // background-color: #47315077;
     border-radius: 4px;
   }
 
@@ -33,7 +33,7 @@
     padding: 8px 16px;
 
     border: none;
-    background-color: #473150;
+    background-color: $purple;
     color: #fff;
 
     text-transform: uppercase;

@@ -1,0 +1,27 @@
+@import '../../styles/mixins';
+
+.services {
+  @include layout;
+  width: 100%;
+
+  &__container {
+    @include container;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__image {
+    width: 30%;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+  }
+}

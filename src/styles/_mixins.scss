@@ -1,0 +1,10 @@
+@mixin layout {
+  margin-top: 24px;
+  padding: 12px 24px;
+
+  text-align: center;
+}
+
+@mixin container {
+  margin-top: 16px;
+}

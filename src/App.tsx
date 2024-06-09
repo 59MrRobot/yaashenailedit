@@ -3,9 +3,11 @@ import './App.scss';
 import MenuIcon from '@mui/icons-material/Menu';
 import { SliderMenu } from './components/SliderMenu';
 import { Header } from './components/Header';
+import { About } from './components/About';
+import { Services } from './components/Services';
+import { Pricelist } from './components/Pricelist';
 import { HowToBook } from './components/HowToBook';
 import { Form } from './components/Form';
-import { Pricelist } from './components/Pricelist';
 
 function App() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -21,9 +23,13 @@ function App() {
 
         <Header />
 
-        <HowToBook />
+        <About />
+
+        <Services />
 
         <Pricelist />
+
+        <HowToBook />
 
         <Form />
 

@@ -1,3 +1,5 @@
+@import '../../styles/vars';
+
 .header {
   position: relative;
 
@@ -31,7 +33,7 @@
 
   &__images-container {
     position: relative;
-    left: 4px;
+    left: 3px;
     margin-top: 8px;
     display: flex;
     align-items: center;
@@ -63,7 +65,6 @@
       right: 32px;
       height: 80px;
       object-position: top;
-      z-index: 1;
     }
 
     &--5 {
@@ -75,5 +76,14 @@
       right: 56px;
       height: 90px;
     }
+  }
+
+  &__button {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 16px;
+    background-color: $purple;
+    color: #fff;
+    text-decoration: none;
   }
 }
