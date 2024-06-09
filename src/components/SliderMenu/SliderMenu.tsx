@@ -7,7 +7,7 @@ interface Props {
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const Slider: React.FC<Props> = ({ isOpen, setIsOpen }) => {
+export const SliderMenu: React.FC<Props> = ({ isOpen, setIsOpen }) => {
   return (
     <div className={`slider-menu-container ${isOpen ? 'open' : ''}`}>
     <div className="slider-menu">
@@ -20,11 +20,29 @@ export const Slider: React.FC<Props> = ({ isOpen, setIsOpen }) => {
 
         <nav className="nav">
           <ul className="nav__list">
-            <li className="nav__item">Home</li>
-            <li className="nav__item">About</li>
-            <li className="nav__item">My Work</li>
-            <li className="nav__item">Contact</li>
-            <li className="nav__item ">Book</li>
+            <li className="nav__item" onClick={() => setIsOpen(false)}>
+              Home
+            </li>
+
+            <li className="nav__item" onClick={() => setIsOpen(false)}>
+              About
+            </li>
+
+            <li className="nav__item" onClick={() => setIsOpen(false)}>
+              My Work
+            </li>
+
+            <li className="nav__item" onClick={() => setIsOpen(false)}>
+              Contact
+            </li>
+
+            <li className="nav__item" onClick={() => setIsOpen(false)}>
+              <a href="#pricelist" className="nav__link">Price List</a>
+            </li>
+
+            <li className="nav__item" onClick={() => setIsOpen(false)}>
+              <a href="#book" className="nav__link">Book</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -32,5 +50,3 @@ export const Slider: React.FC<Props> = ({ isOpen, setIsOpen }) => {
   </div>
   )
 }
-
-export default Slider

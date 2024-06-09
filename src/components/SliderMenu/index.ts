@@ -1,1 +1,1 @@
-export * from './SliderMenu';
+export * from './SliderMenu'

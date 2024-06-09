@@ -1,0 +1,42 @@
+.form {
+  margin-top: 16px;
+  padding: 12px 24px;
+  width: 100%;
+
+  text-align: center;
+
+  &__container {
+    margin-top: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+
+    // background-color: #47315077;
+    border-radius: 4px;
+  }
+
+  &__input {
+    padding: 4px 8px;
+    border: 1px solid #603570;
+    border-radius: 4px;
+    outline: none;
+    width: 50%;
+
+    font-family: 'Cinzel Decorative', sans-serif;
+  }
+
+  &__button {
+    margin-top: 8px;
+    padding: 8px 16px;
+
+    border: none;
+    background-color: #473150;
+    color: #fff;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}

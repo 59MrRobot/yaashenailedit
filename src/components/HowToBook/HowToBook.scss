@@ -1,0 +1,16 @@
+.how-to-book {
+  margin-top: 24px;
+  padding: 12px 24px;
+
+  text-align: center;
+
+  &__container {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 0.85rem;
+  }
+}
