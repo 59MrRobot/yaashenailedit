@@ -2,12 +2,7 @@ import React from 'react';
 import './SliderMenu.scss';
 import CloseIcon from '@mui/icons-material/Close';
 
-interface Props {
-  isOpen: boolean;
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-export const SliderMenu: React.FC<Props> = ({ isOpen, setIsOpen }) => {
+export const SliderMenu = ({ isOpen, setIsOpen }) => {
   return (
     <div className={`slider-menu-container ${isOpen ? 'open' : ''}`}>
     <div className="slider-menu">
@@ -29,7 +24,7 @@ export const SliderMenu: React.FC<Props> = ({ isOpen, setIsOpen }) => {
             </li>
 
             <li className="nav__item" onClick={() => setIsOpen(false)}>
-              My Work
+              <a href="#services" className="nav__link">Services</a>
             </li>
 
             <li className="nav__item" onClick={() => setIsOpen(false)}>

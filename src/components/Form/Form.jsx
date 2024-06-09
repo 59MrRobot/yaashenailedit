@@ -48,7 +48,12 @@ export const Form = () => {
           onChange={(event) => setNumber(event.target.value)}
         />
 
-        <input type="datetime-local" name="datetime" id="datetime" />
+        <input
+          type="datetime-local"
+          name="datetime"
+          id="datetime"
+          className="form__input"
+        />
 
         <button className="form__button" onClick={() => onSubmit()}>Submit</button>
       </form>

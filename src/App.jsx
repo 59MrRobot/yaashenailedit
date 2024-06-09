@@ -9,11 +9,13 @@ import { Pricelist } from './components/Pricelist';
 import { HowToBook } from './components/HowToBook';
 import { Form } from './components/Form';
 
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+
 function App() {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="app">
+    <div className="app" id="page-top">
       <div className="app__wrapper">
         <div className="app__menu">
           <p className="app__logo">YSNI</p>
@@ -35,6 +37,10 @@ function App() {
 
         <SliderMenu isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
+
+      <a href="#page-top" className="back-to-top">
+        <ArrowUpwardIcon fontSize="small" />
+      </a>
     </div>
   );
 }
