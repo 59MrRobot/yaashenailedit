@@ -1,0 +1,37 @@
+@import '../../styles/mixins';
+
+.contact {
+  @include layout;
+  width: 100%;
+
+  &__container {
+    @include container;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 12px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+}

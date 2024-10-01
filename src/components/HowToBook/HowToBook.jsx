@@ -4,7 +4,7 @@ import './HowToBook.scss';
 export const HowToBook = () => {
   return (
     <div className="how-to-book" id="how-to-book">
-      <h2>How To Book</h2>
+      <h2 className="heading">How To Book</h2>
 
       <div className="how-to-book__container">
         <p>

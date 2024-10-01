@@ -10,6 +10,7 @@ import { HowToBook } from './components/HowToBook';
 import { Form } from './components/Form';
 
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import Contact from './components/Contact/Contact';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,20 +28,22 @@ function App() {
 
         <About />
 
+        <HowToBook />
+
         <Services />
 
         <Pricelist />
 
-        <HowToBook />
-
         <Form />
+
+        <Contact />
 
         <SliderMenu isOpen={isOpen} setIsOpen={setIsOpen} />
       </div>
 
-      <a href="#page-top" className="back-to-top">
+      {/* <a href="#page-top" className="back-to-top">
         <ArrowUpwardIcon fontSize="small" />
-      </a>
+      </a> */}
     </div>
   );
 }

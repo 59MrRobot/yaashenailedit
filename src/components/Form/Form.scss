@@ -18,14 +18,32 @@
     border-radius: 4px;
   }
 
+  &__row {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+
+    &--column {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
   &__input {
     padding: 4px 8px;
     border: 1px solid #603570;
     border-radius: 4px;
     outline: none;
-    width: 60%;
+    width: 100%;
+
+    font-size: 12px;
 
     font-family: 'Cinzel Decorative', sans-serif;
+  }
+
+  &__label {
+    font-size: 12px;
+    text-align: start;
   }
 
   &__button {
